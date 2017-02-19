@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>False-like Conditions - Example</title>
+</head>
+
+<body>
+	<script>
+		function reportAttitude (person) {
+			if (person.skepticism) {
+				console.log(person.name +
+							" is skeptical about " +
+							person.skepticism);
+			} else {
+				console.log(person.name + " wants to believe.");
+			}
+		}
+
+		var mulder = {
+			name: "Fox Mulder"
+		};
+
+		var scully = {
+			name: "Dana Scully",
+			skepticism: "UFOs & conspiracy theories"
+		};
+
+		var frohikey = {
+			name: "Melvin Frohikey",
+			skepticism: ""
+		};
+
+		// Outputs: "Fox Mulder wants to believe."
+		reportAttitude(mulder);
+
+		// Outputs: "Dana Scully is skeptical about UFOs and conspiracy theories."
+		reportAttitude(scully);
+
+		// Outputs: "Melvin Frohikey wants to believe."
+		reportAttitude(frohikey);
+	</script>
+</body>
+
+</html>
