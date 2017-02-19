@@ -1,0 +1,10 @@
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.scikit-learn\bin\Debug\RPGone.scikit-learn.exe.config
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.scikit-learn\bin\Debug\RPGone.scikit-learn.exe
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.scikit-learn\bin\Debug\RPGone.scikit-learn.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.scikit-learn\bin\Debug\IronPython.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.scikit-learn\bin\Debug\IronPython.Modules.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.scikit-learn\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.scikit-learn\bin\Debug\Microsoft.Scripting.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.scikit-learn\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.scikit-learn\obj\Debug\RPGone.scikit-learn.pyprojResolveAssemblyReference.cache
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.scikit-learn\obj\Debug\RPGone.scikit-learn.exe

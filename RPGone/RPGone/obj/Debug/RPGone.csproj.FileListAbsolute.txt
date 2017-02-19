@@ -1,0 +1,5 @@
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone\obj\Debug\RPGone.csprojResolveAssemblyReference.cache
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone\bin\Debug\RPGone.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone\bin\Debug\RPGone.pdb
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone\obj\Debug\RPGone.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone\obj\Debug\RPGone.pdb
