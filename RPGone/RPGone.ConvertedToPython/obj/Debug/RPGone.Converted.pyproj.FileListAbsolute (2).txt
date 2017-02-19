@@ -1,0 +1,8 @@
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.ConvertedToPython\bin\Debug\Window1.xaml
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.ConvertedToPython\bin\Debug\RPGone.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.ConvertedToPython\bin\Debug\IronPython.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.ConvertedToPython\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.ConvertedToPython\bin\Debug\Microsoft.Scripting.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.ConvertedToPython\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.ConvertedToPython\obj\Debug\RPGone.Converted.pyprojResolveAssemblyReference.cache
+C:\Users\Daniela\Documents\SharpDevelop Projects\RPGone\RPGone.ConvertedToPython\obj\Debug\RPGone.dll
