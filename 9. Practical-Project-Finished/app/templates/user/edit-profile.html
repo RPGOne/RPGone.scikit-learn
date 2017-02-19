@@ -1,0 +1,49 @@
+<div>
+    <div class="row">
+        <div class="col-md-6 well">
+            <h2>Edit Profile</h2>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" ng-model="userData.name" required />
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" id="email" ng-model="userData.email" required />
+            </p>
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" ng-model="userData.phoneNumber" required />
+            </p>
+            <p>
+                <label for="town">Town:</label>
+                <select id="town" ng-model="userData.townId">
+                    <option value="null">(None)</option>
+                    <option ng-repeat="town in towns" value="{{town.id}}">{{town.name}}</option>
+                </select>
+            </p>
+            <p>
+                <a ng-click="updateProfile(userData)" class="button">Update</a>
+                <a href="#/" class="link">Cancel</a>
+            <p>
+        </div>
+        <div class="col-md-6 well">
+            <h2>Change Password </h2>
+            <p>
+                <label for="oldPassword">Old Password:</label>
+                <input type="password" id="oldPassword" ng-model="passData.oldPassword" required />
+            </p>
+            <p>
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" ng-model="passData.newPassword" required />
+            </p>
+            <p>
+                <label for="confirmPassword">Confirm password:</label>
+                <input type="password" id="confirmPassword" ng-model="passData.confirmPassword" required />
+            </p>
+            <p>
+                <a ng-click="changePassword(passData)" class="button">Change Password</a>
+                <a href="#/" class="link">Cancel</a>
+            <p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="box">
+    <h2>Edit Ad</h2>
+    <p>
+        <label for="title">Title:</label>
+        <input type="text" id="title" ng-model="adData.title" required />
+    </p>
+    <p>
+        <label for="text">Text:</label>
+        <textarea id="text" ng-model="adData.text" required></textarea>
+    </p>
+	<p>
+	  <label for="image">Image:</label>
+	  <input type="file" id="image"
+			 onchange="angular.element(this).scope().fileSelected(this)" />
+	  <div class="image-box">
+		  <p ng-if="!adData.imageDataUrl">Image Preview</p><img ng-if="adData.imageDataUrl" ng-src="{{adData.imageDataUrl}}" alt=""/>
+	  </div>
+    <a ng-click="deleteImage()" class="button">Delete Image</a>
+	</p>
+    <p>
+        <label for="category">Category:</label>
+        <select id="category" ng-model="adData.categoryId">
+            <option value="null">(None)</option>
+            <option ng-repeat="c in categories" value="{{c.id}}">{{c.name}}</option>
+        </select>
+    </p>
+    <p>
+        <label for="town">Town:</label>
+        <select id="town" ng-model="adData.townId">
+            <option value="null">(None)</option>
+            <option ng-repeat="town in towns" value="{{town.id}}">{{town.name}}</option>
+        </select>
+    </p>
+    <p>
+        <a ng-click="editAd(adData)" class="button">Edit & Publish</a>
+        <a href="#/user/ads" class="button">Cancel</a>
+    <p>
+</div>

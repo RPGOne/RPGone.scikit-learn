@@ -1,0 +1,29 @@
+<div class="box">
+    <h2>Edit Ad</h2>
+    <p>
+        <label for="title">Title:</label>
+        <input disabled type="text" id="title" ng-model="adData.title" required />
+    </p>
+    <p>
+        <label for="text">Text:</label>
+        <textarea disabled id="text" ng-model="adData.text" required></textarea>
+    </p>
+	<p>
+      Image:
+	  <div class="image-box">
+		  <img ng-if="adData.imageDataUrl" ng-src="{{adData.imageDataUrl}}" alt=""/>
+	  </div>
+	</p>
+    <p>
+        <label for="category">Category:</label>
+        <input disabled type="text" id="category" ng-model="adData.categoryName" required />
+    </p>
+    <p>
+        <label for="town">Town:</label>
+        <input disabled type="text" id="town" ng-model="adData.townName" required />
+    </p>
+    <p>
+        <a ng-click="deleteAd(adData)" class="button">Delete</a>
+        <a href="#/user/ads" class="button">Cancel</a>
+    <p>
+</div>

@@ -1,0 +1,26 @@
+<pagination total-items="ads.numItems" ng-model="adsParams.startPage"
+  items-per-page="adsParams.pageSize" ng-change="reloadAds()"
+  max-size="9" boundary-links="true">
+</pagination>
+
+<ul class="ads">
+    <li ng-repeat="ad in userAds.ads" class="box" data-id="{{ad.id}}">
+        <h1>{{ad.title}}</h1>
+        <div><strong>Date:</strong> {{ad.date | date:'dd-MMM-yyyy'}}</div>
+        <div ng-if='ad.imageDataUrl'>
+            <strong>Image:</strong><img class="ad-image" ng-src="{{ad.imageDataUrl}}" />
+        </div>
+        <div><strong>Text:</strong> {{ad.text}}</div>
+        <div><strong>Category:</strong> {{ad.categoryName}}</div>
+        <div><strong>Town:</strong> {{ad.townName}}</div>
+        <div><strong>Status:</strong> {{ad.status}}</div>
+        <div ng-if="ad.status!='Inactive'"><a href="" ng-click="deactivateAd(ad)" class="button">Deactivate</a></div>
+        <div ng-if="ad.status=='Inactive'"><a href="/#/user/ads/{{ad.id}}/editAd/" class="button">Edit</a></div>
+        <div ng-if="ad.status=='Inactive'"><a href="" ng-click="publishAgainAd(ad)" class="button">Publish Again</a></div>
+        <div ng-if="ad.status=='Inactive'"><a href="/#/user/ads/{{ad.id}}/deleteAd/" class="button">Delete</a></div>
+    </li>
+</ul>
+
+<div ng-if="ads.ads.length==0" class="box no-data">
+    No ads found.
+</div>
