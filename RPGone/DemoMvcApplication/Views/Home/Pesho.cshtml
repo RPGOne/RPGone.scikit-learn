@@ -1,0 +1,14 @@
+﻿@model DemoMvcApplication.Models.LoginViewModel
+@{
+    ViewBag.Title = "Vlado";
+}
+
+<h2>@Model</h2>
+
+<p>
+    @for (int i = 0; i < 10; i++)
+    {
+        var num = i * 3;
+        <div>@num</div>
+    }
+</p>
