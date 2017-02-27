@@ -1,0 +1,48 @@
+﻿@model ASP.NET_MVC_Essentials_Demo.Models.PostInputModel
+@{
+    ViewBag.Title = "View";
+}
+
+@section styles {
+<style>
+    form {
+        //background-color: magenta;
+    }
+</style>
+}
+
+@{
+    
+}
+
+<h2>View</h2>
+
+@using (Html.BeginForm("Create", "Posts", FormMethod.Post, new { @class = "post-form" }))
+{
+    @Html.LabelFor(x => x.Title)
+    @Html.EditorFor(x => x.Title, new { @class = "cool" })
+    @Html.ValidationMessageFor(x => x.Title)
+    
+    @Html.DropDownListFor(x => x.Item, Model.Items)
+
+    <input type="submit" name="name" value="Post post" />
+}
+
+@Html.ActionLink("GO home", "Contact", "Home")
+
+@*<form action="/Posts/Create" method="post">
+    <label for="title">Title</label>     
+    <input id="title" type="text" name="title" value="" />
+    <label for="content">Content</label>
+    <input id="content" type="text" name="content" value="" />
+
+    <input type="submit" name="submit" value="Create Post" />
+</form>*@
+
+@section scripts {
+<script>
+    $('#form').on('hover', function () {
+        this.style.backgroundColor = "yellow";
+    })
+</script>
+}
