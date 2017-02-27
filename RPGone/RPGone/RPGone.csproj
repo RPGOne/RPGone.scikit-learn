@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{39BB1C9D-7BBA-4882-99E9-7AF989939E07}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RPGone</RootNamespace>
+    <AssemblyName>RPGone</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>True</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RunCodeAnalysis>True</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Daniela\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <StartAction>Program</StartAction>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Class1.py" />
+    <None Include="han-solo.py" />
+    <None Include="Properties\RPGone.scikit-learn\affinity_propagation_.py" />
+    <None Include="Properties\RPGone.scikit-learn\approximate.py" />
+    <None Include="Properties\RPGone.scikit-learn\arpack.py" />
+    <None Include="Properties\RPGone.scikit-learn\backreferences.py" />
+    <None Include="Properties\RPGone.scikit-learn\bagging.py" />
+    <None Include="Properties\RPGone.scikit-learn\base.py" />
+    <None Include="Properties\RPGone.scikit-learn\bayes.py" />
+    <None Include="Properties\RPGone.scikit-learn\bayesian_mixture.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_20newsgroups.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_covertype.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_glm.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_glmnet.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_isolation_forest.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_isotonic.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_lasso.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_mnist.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_multilabel_metrics.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_plot_approximate_neighbors.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_plot_fastkmeans.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_plot_incremental_pca.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_plot_lasso_path.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_plot_neighbors.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_plot_nmf.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_plot_omp_lars.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_plot_parallel_pairwise.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_plot_randomized_svd.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_plot_svd.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_plot_ward.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_random_projections.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_rcv1_logreg_convergence.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_sample_without_replacement.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_sgd_regression.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_sparsify.py" />
+    <None Include="Properties\RPGone.scikit-learn\bench_tree.py" />
+    <None Include="Properties\RPGone.scikit-learn\bicluster.py" />
+    <None Include="Properties\RPGone.scikit-learn\bicluster_newsgroups.py" />
+    <None Include="Properties\RPGone.scikit-learn\birch.py" />
+    <None Include="Properties\RPGone.scikit-learn\bounds.py" />
+    <None Include="Properties\RPGone.scikit-learn\calibration.py" />
+    <None Include="Properties\RPGone.scikit-learn\cca_.py" />
+    <None Include="Properties\RPGone.scikit-learn\check_build_doc.py" />
+    <None Include="Properties\RPGone.scikit-learn\classes.py" />
+    <None Include="Properties\RPGone.scikit-learn\classification.py" />
+    <None Include="Properties\RPGone.scikit-learn\class_weight.py" />
+    <None Include="Properties\RPGone.scikit-learn\common.py" />
+    <None Include="Properties\RPGone.scikit-learn\conf.py" />
+    <None Include="Properties\RPGone.scikit-learn\coordinate_descent.py" />
+    <None Include="Properties\RPGone.scikit-learn\correlation_models.py" />
+    <None Include="Properties\RPGone.scikit-learn\cross_validation.py" />
+    <None Include="Properties\RPGone.scikit-learn\data.py" />
+    <None Include="Properties\RPGone.scikit-learn\dbscan_.py" />
+    <None Include="Properties\RPGone.scikit-learn\deprecation.py" />
+    <None Include="Properties\RPGone.scikit-learn\dict_learning.py" />
+    <None Include="Properties\RPGone.scikit-learn\dict_vectorizer.py" />
+    <None Include="Properties\RPGone.scikit-learn\digits_classification_exercise.py" />
+    <None Include="Properties\RPGone.scikit-learn\discriminant_analysis.py" />
+    <None Include="Properties\RPGone.scikit-learn\disk.py" />
+    <None Include="Properties\RPGone.scikit-learn\docscrape.py" />
+    <None Include="Properties\RPGone.scikit-learn\docscrape_sphinx.py" />
+    <None Include="Properties\RPGone.scikit-learn\docs_resolv.py" />
+    <None Include="Properties\RPGone.scikit-learn\document_classification_20newsgroups.py" />
+    <None Include="Properties\RPGone.scikit-learn\document_clustering.py" />
+    <None Include="Properties\RPGone.scikit-learn\dpgmm.py" />
+    <None Include="Properties\RPGone.scikit-learn\dummy.py" />
+    <None Include="Properties\RPGone.scikit-learn\empirical_covariance_.py" />
+    <None Include="Properties\RPGone.scikit-learn\estimator_checks.py" />
+    <None Include="Properties\RPGone.scikit-learn\exceptions.py" />
+    <None Include="Properties\RPGone.scikit-learn\exercise_01_language_train_model.py" />
+    <None Include="Properties\RPGone.scikit-learn\exercise_02_sentiment.py" />
+    <None Include="Properties\RPGone.scikit-learn\export.py" />
+    <None Include="Properties\RPGone.scikit-learn\extmath.py" />
+    <None Include="Properties\RPGone.scikit-learn\face_recognition.py" />
+    <None Include="Properties\RPGone.scikit-learn\factor_analysis.py" />
+    <None Include="Properties\RPGone.scikit-learn\fastica_.py" />
+    <None Include="Properties\RPGone.scikit-learn\feature_selection_pipeline.py" />
+    <None Include="Properties\RPGone.scikit-learn\feature_stacker.py" />
+    <None Include="Properties\RPGone.scikit-learn\fetch_data.py" />
+    <None Include="Properties\RPGone.scikit-learn\fixes.py" />
+    <None Include="Properties\RPGone.scikit-learn\forest.py" />
+    <None Include="Properties\RPGone.scikit-learn\format_stack.py" />
+    <None Include="Properties\RPGone.scikit-learn\from_model.py" />
+    <None Include="Properties\RPGone.scikit-learn\funcsigs.py" />
+    <None Include="Properties\RPGone.scikit-learn\func_inspect.py" />
+    <None Include="Properties\RPGone.scikit-learn\gaussian_mixture.py" />
+    <None Include="Properties\RPGone.scikit-learn\gaussian_process.py" />
+    <None Include="Properties\RPGone.scikit-learn\generate_skeletons.py" />
+    <None Include="Properties\RPGone.scikit-learn\gen_gallery.py" />
+    <None Include="Properties\RPGone.scikit-learn\gen_rst.py" />
+    <None Include="Properties\RPGone.scikit-learn\github_link.py" />
+    <None Include="Properties\RPGone.scikit-learn\gmm.py" />
+    <None Include="Properties\RPGone.scikit-learn\gpc.py" />
+    <None Include="Properties\RPGone.scikit-learn\gpr.py" />
+    <None Include="Properties\RPGone.scikit-learn\gradient_boosting.py" />
+    <None Include="Properties\RPGone.scikit-learn\graph.py" />
+    <None Include="Properties\RPGone.scikit-learn\graph_lasso_.py" />
+    <None Include="Properties\RPGone.scikit-learn\grid_search.py" />
+    <None Include="Properties\RPGone.scikit-learn\grid_search_digits.py" />
+    <None Include="Properties\RPGone.scikit-learn\grid_search_text_feature_extraction.py" />
+    <None Include="Properties\RPGone.scikit-learn\hashing.py" />
+    <None Include="Properties\RPGone.scikit-learn\hashing_vs_dict_vectorizer.py" />
+    <None Include="Properties\RPGone.scikit-learn\hetero_feature_union.py" />
+    <None Include="Properties\RPGone.scikit-learn\hierarchical.py" />
+    <None Include="Properties\RPGone.scikit-learn\huber.py" />
+    <None Include="Properties\RPGone.scikit-learn\iforest.py" />
+    <None Include="Properties\RPGone.scikit-learn\image.py" />
+    <None Include="Properties\RPGone.scikit-learn\imputation.py" />
+    <None Include="Properties\RPGone.scikit-learn\incremental_pca.py" />
+    <None Include="Properties\RPGone.scikit-learn\isomap.py" />
+    <None Include="Properties\RPGone.scikit-learn\isotonic.py" />
+    <None Include="Properties\RPGone.scikit-learn\kde.py" />
+    <None Include="Properties\RPGone.scikit-learn\kernels.py" />
+    <None Include="Properties\RPGone.scikit-learn\kernel_approximation.py" />
+    <None Include="Properties\RPGone.scikit-learn\kernel_pca.py" />
+    <None Include="Properties\RPGone.scikit-learn\kernel_ridge.py" />
+    <None Include="Properties\RPGone.scikit-learn\k_means_.py" />
+    <None Include="Properties\RPGone.scikit-learn\label.py" />
+    <None Include="Properties\RPGone.scikit-learn\labeled_faces_fixture.py" />
+    <None Include="Properties\RPGone.scikit-learn\label_propagation.py" />
+    <None Include="Properties\RPGone.scikit-learn\lasso_dense_vs_sparse_data.py" />
+    <None Include="Properties\RPGone.scikit-learn\lda.py" />
+    <None Include="Properties\RPGone.scikit-learn\learning_curve.py" />
+    <None Include="Properties\RPGone.scikit-learn\least_angle.py" />
+    <None Include="Properties\RPGone.scikit-learn\linear_assignment_.py" />
+    <None Include="Properties\RPGone.scikit-learn\locally_linear.py" />
+    <None Include="Properties\RPGone.scikit-learn\logger.py" />
+    <None Include="Properties\RPGone.scikit-learn\logistic.py" />
+    <None Include="Properties\RPGone.scikit-learn\mds.py" />
+    <None Include="Properties\RPGone.scikit-learn\mean_shift_.py" />
+    <None Include="Properties\RPGone.scikit-learn\memory.py" />
+    <None Include="Properties\RPGone.scikit-learn\metaestimators.py" />
+    <None Include="Properties\RPGone.scikit-learn\missing_values.py" />
+    <None Include="Properties\RPGone.scikit-learn\mlcomp_sparse_document_classification.py" />
+    <None Include="Properties\RPGone.scikit-learn\mldata_fixture.py" />
+    <None Include="Properties\RPGone.scikit-learn\mocking.py" />
+    <None Include="Properties\RPGone.scikit-learn\multiclass.py" />
+    <None Include="Properties\RPGone.scikit-learn\multilayer_perceptron.py" />
+    <None Include="Properties\RPGone.scikit-learn\multioutput.py" />
+    <None Include="Properties\RPGone.scikit-learn\mutual_info_.py" />
+    <None Include="Properties\RPGone.scikit-learn\my_exceptions.py" />
+    <None Include="Properties\RPGone.scikit-learn\naive_bayes.py" />
+    <None Include="Properties\RPGone.scikit-learn\nearest_centroid.py" />
+    <None Include="Properties\RPGone.scikit-learn\nmf.py" />
+    <None Include="Properties\RPGone.scikit-learn\notebook.py" />
+    <None Include="Properties\RPGone.scikit-learn\numpydoc.py" />
+    <None Include="Properties\RPGone.scikit-learn\numpy_pickle.py" />
+    <None Include="Properties\RPGone.scikit-learn\numpy_pickle_compat.py" />
+    <None Include="Properties\RPGone.scikit-learn\numpy_pickle_utils.py" />
+    <None Include="Properties\RPGone.scikit-learn\odict.py" />
+    <None Include="Properties\RPGone.scikit-learn\omp.py" />
+    <None Include="Properties\RPGone.scikit-learn\online_lda.py" />
+    <None Include="Properties\RPGone.scikit-learn\optimize.py" />
+    <None Include="Properties\RPGone.scikit-learn\outlier_detection.py" />
+    <None Include="Properties\RPGone.scikit-learn\pairwise.py" />
+    <None Include="Properties\RPGone.scikit-learn\parallel.py" />
+    <None Include="Properties\RPGone.scikit-learn\parse_path.py" />
+    <None Include="Properties\RPGone.scikit-learn\partial_dependence.py" />
+    <None Include="Properties\RPGone.scikit-learn\passive_aggressive.py" />
+    <None Include="Properties\RPGone.scikit-learn\pca.py" />
+    <None Include="Properties\RPGone.scikit-learn\perceptron.py" />
+    <None Include="Properties\RPGone.scikit-learn\pipeline.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_adaboost_hastie_10_2.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_adaboost_multiclass.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_adaboost_regression.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_adaboost_twoclass.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_adjusted_for_chance_measures.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_affinity_propagation.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_agglomerative_clustering.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_agglomerative_clustering_metrics.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_approximate_nearest_neighbors_hyperparameters.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_approximate_nearest_neighbors_scalability.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_ard.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_bayesian_ridge.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_bias_variance.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_birch_vs_minibatchkmeans.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_calibration.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_calibration_curve.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_calibration_multiclass.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_classification.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_classification_probability.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_classifier_comparison.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_cluster_comparison.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_cluster_iris.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_color_quantization.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_compare_calibration.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_compare_cross_decomposition.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_compare_gpr_krr.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_compare_methods.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_compare_reduction.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_concentration_prior.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_confusion_matrix.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_covariance_estimation.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_custom_kernel.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_cv_diabetes.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_cv_digits.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_cv_predict.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_dbscan.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_dict_face_patches.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_digits_agglomeration.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_digits_classification.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_digits_kde_sampling.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_digits_last_image.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_digits_linkage.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_digits_pipe.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_ensemble_oob.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_faces_decomposition.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_face_compress.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_face_segmentation.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_face_ward_segmentation.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_feature_agglomeration_vs_univariate_selection.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_feature_selection.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_feature_transformation.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_forest_importances.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_forest_importances_faces.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_forest_iris.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_function_transformer.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_f_test_vs_mi.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gmm.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gmm_covariances.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gmm_pdf.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gmm_selection.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gmm_sin.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gpc.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gpc_iris.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gpc_isoprobability.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gpc_xor.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gpr_co2.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gpr_noisy.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gpr_noisy_targets.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gpr_prior_posterior.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gradient_boosting_oob.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gradient_boosting_quantile.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gradient_boosting_regression.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_gradient_boosting_regularization.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_huber_vs_ridge.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_ica_blind_source_separation.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_ica_vs_pca.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_image_denoising.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_incremental_pca.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_iris.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_iris_dataset.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_iris_exercise.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_iris_logistic.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_isolation_forest.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_isotonic_regression.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_johnson_lindenstrauss_bound.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_kde_1d.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_kernel_approximation.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_kernel_pca.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_kernel_ridge_regression.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_kmeans_assumptions.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_kmeans_digits.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_kmeans_silhouette_analysis.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_kmeans_stability_low_dim_dense.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_label_propagation_digits.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_label_propagation_digits_active_learning.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_label_propagation_structure.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_label_propagation_versus_svm_iris.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_lasso_and_elasticnet.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_lasso_coordinate_descent_path.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_lasso_lars.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_lasso_model_selection.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_lda.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_lda_qda.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_learning_curve.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_lle_digits.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_logistic.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_logistic_l1_l2_sparsity.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_logistic_multinomial.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_logistic_path.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_lw_vs_oas.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_mahalanobis_distances.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_manifold_sphere.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_mds.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_mean_shift.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_mini_batch_kmeans.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_mlp_alpha.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_mlp_training_curves.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_mnist_filters.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_model_complexity_influence.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_multilabel.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_multioutput_face_completion.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_multi_task_lasso_support.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_nearest_centroid.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_nested_cross_validation_iris.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_ols.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_ols_3d.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_ols_ridge_variance.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_omp.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_oneclass.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_outlier_detection.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_outlier_detection_housing.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_out_of_core_classification.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_partial_dependence.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_pca_3d.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_pca_iris.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_pca_vs_fa_model_selection.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_pca_vs_lda.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_permutation_test_for_classification.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_polynomial_interpolation.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_precision_recall.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_prediction_latency.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_random_dataset.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_random_forest_embedding.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_random_forest_regression_multioutput.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_random_multilabel_dataset.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_ransac.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_rbf_parameters.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_rbm_logistic_classification.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_regression.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_rfe_digits.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_rfe_with_cross_validation.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_ridge_coeffs.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_ridge_path.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_robust_fit.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_robust_scaling.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_robust_vs_empirical_covariance.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_roc.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_roc_crossval.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_segmentation_toy.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_select_from_model_boston.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_separating_hyperplane.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_separating_hyperplane_unbalanced.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_sgd_comparison.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_sgd_iris.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_sgd_loss_functions.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_sgd_penalties.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_sgd_separating_hyperplane.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_sgd_weighted_samples.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_sparse_coding.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_sparse_cov.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_sparse_recovery.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_species_distribution_modeling.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_species_kde.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_spectral_biclustering.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_spectral_coclustering.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_stock_market.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_svm_anova.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_svm_kernels.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_svm_margin.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_svm_nonlinear.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_svm_regression.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_svm_scale_c.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_swissroll.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_theilsen.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_tomography_l1_reconstruction.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_train_error_vs_test_error.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_tree_regression.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_tree_regression_multioutput.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_underfitting_overfitting.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_unveil_tree_structure.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_validation_curve.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_voting_decision_regions.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_voting_probas.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_ward_structured_vs_unstructured.py" />
+    <None Include="Properties\RPGone.scikit-learn\plot_weighted_samples.py" />
+    <None Include="Properties\RPGone.scikit-learn\pls_.py" />
+    <None Include="Properties\RPGone.scikit-learn\pool.py" />
+    <None Include="Properties\RPGone.scikit-learn\pyparsing.py" />
+    <None Include="Properties\RPGone.scikit-learn\qda.py" />
+    <None Include="Properties\RPGone.scikit-learn\random.py" />
+    <None Include="Properties\RPGone.scikit-learn\randomized_l1.py" />
+    <None Include="Properties\RPGone.scikit-learn\randomized_search.py" />
+    <None Include="Properties\RPGone.scikit-learn\random_projection.py" />
+    <None Include="Properties\RPGone.scikit-learn\ranking.py" />
+    <None Include="Properties\RPGone.scikit-learn\ransac.py" />
+    <None Include="Properties\RPGone.scikit-learn\rbm.py" />
+    <None Include="Properties\RPGone.scikit-learn\rcv1_fixture.py" />
+    <None Include="Properties\RPGone.scikit-learn\regression.py" />
+    <None Include="Properties\RPGone.scikit-learn\regression_models.py" />
+    <None Include="Properties\RPGone.scikit-learn\rfe.py" />
+    <None Include="Properties\RPGone.scikit-learn\ridge.py" />
+    <None Include="Properties\RPGone.scikit-learn\robust_covariance.py" />
+    <None Include="Properties\RPGone.scikit-learn\sag.py" />
+    <None Include="Properties\RPGone.scikit-learn\scorer.py" />
+    <None Include="Properties\RPGone.scikit-learn\setup.py" />
+    <None Include="Properties\RPGone.scikit-learn\shrunk_covariance_.py" />
+    <None Include="Properties\RPGone.scikit-learn\six.py" />
+    <None Include="Properties\RPGone.scikit-learn\sparsefuncs.py" />
+    <None Include="Properties\RPGone.scikit-learn\sparse_pca.py" />
+    <None Include="Properties\RPGone.scikit-learn\spectral.py" />
+    <None Include="Properties\RPGone.scikit-learn\spectral_embedding_.py" />
+    <None Include="Properties\RPGone.scikit-learn\stats.py" />
+    <None Include="Properties\RPGone.scikit-learn\stochastic_gradient.py" />
+    <None Include="Properties\RPGone.scikit-learn\stop_words.py" />
+    <None Include="Properties\RPGone.scikit-learn\supervised.py" />
+    <None Include="Properties\RPGone.scikit-learn\svg2imagemap.py" />
+    <None Include="Properties\RPGone.scikit-learn\svm_gui.py" />
+    <None Include="Properties\RPGone.scikit-learn\testing.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_20news.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_affinity_propagation.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_base.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_bench.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_bicluster.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_birch.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_calibration.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_check_build.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_class_weight.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_common.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_covariance.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_covtype.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_cross_validation.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_dbscan.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_discriminant_analysis.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_dummy.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_estimator_checks.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_externals_setup.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_extmath.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_fast_dict.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_fixes.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_graph.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_graph_lasso.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_grid_search.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_hierarchical.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_init.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_isotonic.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_kddcup99.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_kernel_approximation.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_kernel_ridge.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_k_means.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_learning_curve.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_lfw.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_linear_assignment.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_mean_shift.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_metaestimators.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_mldata.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_multiclass.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_multioutput.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_murmurhash.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_naive_bayes.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_optimize.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_pipeline.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_pls.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_random.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_random_projection.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_rcv1.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_robust_covariance.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_samples_generator.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_seq_dataset.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_shortest_path.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_sparsefuncs.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_spectral.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_stats.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_svmlight_format.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_testing.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_utils.py" />
+    <None Include="Properties\RPGone.scikit-learn\test_validation.py" />
+    <None Include="Properties\RPGone.scikit-learn\text.py" />
+    <None Include="Properties\RPGone.scikit-learn\theil_sen.py" />
+    <None Include="Properties\RPGone.scikit-learn\topics_extraction_with_nmf_lda.py" />
+    <None Include="Properties\RPGone.scikit-learn\tree.py" />
+    <None Include="Properties\RPGone.scikit-learn\truncated_svd.py" />
+    <None Include="Properties\RPGone.scikit-learn\twenty_newsgroups_fixture.py" />
+    <None Include="Properties\RPGone.scikit-learn\t_sne.py" />
+    <None Include="Properties\RPGone.scikit-learn\univariate_selection.py" />
+    <None Include="Properties\RPGone.scikit-learn\unsupervised.py" />
+    <None Include="Properties\RPGone.scikit-learn\unsupervised_learning_fixture.py" />
+    <None Include="Properties\RPGone.scikit-learn\validation.py" />
+    <None Include="Properties\RPGone.scikit-learn\variance_threshold.py" />
+    <None Include="Properties\RPGone.scikit-learn\voting_classifier.py" />
+    <None Include="Properties\RPGone.scikit-learn\weight_boosting.py" />
+    <None Include="Properties\RPGone.scikit-learn\wikipedia_principal_eigenvector.py" />
+    <None Include="Properties\RPGone.scikit-learn\working_with_text_data_fixture.py" />
+    <None Include="Properties\RPGone.scikit-learn\_base.py" />
+    <None Include="Properties\RPGone.scikit-learn\_compat.py" />
+    <None Include="Properties\RPGone.scikit-learn\_feature_agglomeration.py" />
+    <None Include="Properties\RPGone.scikit-learn\_function_transformer.py" />
+    <None Include="Properties\RPGone.scikit-learn\_graph_validation.py" />
+    <None Include="Properties\RPGone.scikit-learn\_memory_helpers.py" />
+    <None Include="Properties\RPGone.scikit-learn\_multiprocessing_helpers.py" />
+    <None Include="Properties\RPGone.scikit-learn\_parallel_backends.py" />
+    <None Include="Properties\RPGone.scikit-learn\_scipy_sparse_lsqr_backport.py" />
+    <None Include="Properties\RPGone.scikit-learn\_search.py" />
+    <None Include="Properties\RPGone.scikit-learn\_split.py" />
+    <None Include="Properties\RPGone.scikit-learn\_stochastic_optimizers.py" />
+    <None Include="Properties\RPGone.scikit-learn\_validation.py" />
+    <None Include="Properties\RPGone.scikit-learn\__init__.py" />
+    <None Include="RPGtwo.py" />
+    <None Include="RPGtwo\RPGtwo" />
+    <None Include="sebabulba.py" />
+    <None Include="UserControl1.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\RPGone.scikit-learn" />
+    <Folder Include="RPGtwo" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
