@@ -1,0 +1,47 @@
+{
+  "name": "RPGone.scikit-learn",
+  "scripts": {
+  },
+  "env": {
+    "LOGDNA_KEY": {
+      "required": true
+    },
+    "NEW_RELIC_LICENSE_KEY": {
+      "required": true
+    },
+    "NEW_RELIC_LOG": {
+      "required": true
+    },
+    "PAPERTRAIL_API_TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "herokuconnect",
+    "logdna",
+    "newrelic",
+    "papertrail"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    },
+    {
+      "url": "heroku/java"
+    },
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "heroku/php"
+    },
+    {
+      "url": "heroku/clojure"
+    }
+  ]
+}
